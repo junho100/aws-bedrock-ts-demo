@@ -1,0 +1,36 @@
+{
+  "name": "video-processor",
+  "version": "1.0.0",
+  "description": "AWS S3 비디오 처리 애플리케이션",
+  "main": "dist/video-processor.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node start.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aws",
+    "s3",
+    "video",
+    "processing",
+    "ffmpeg"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.797.0",
+    "@aws-sdk/credential-providers": "^3.797.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "rimraf": "^5.0.5",
+    "ts-dedent": "^2.2.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/fluent-ffmpeg": "^2.1.24",
+    "@types/node": "^20.10.0",
+    "@types/rimraf": "^4.0.5",
+    "@types/uuid": "^9.0.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  }
+}
